@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="search_page">
+        <div class="filters">
+
+            <div class="product_type" >
+                <h3>product type</h3>
+
+                <table >
+                    <tr>
+                      <td style="width: 100%;"> <input type="checkbox" id="product1" name="product1">
+                        <label for="product1"> Furniture</label></td>
+                      <td style="text-align: right;">466</td>
+                    </tr>
+                    <tr>
+                        <td> <input type="checkbox" id="product2" name="product2" >
+                            <label for="product2"> Pillow</label></td>
+                        <td>214</td>
+                      </tr>
+                      <tr>
+                        <td> <input type="checkbox" id="product3" name="product3">
+                            <label for="product3"> earing</label></td>
+                        <td>132</td>
+                      </tr>
+                      </table>
+                      
+                      <!-- see more -->
+                      <span id="productdots" style="color: #f2edf3;">...</span>
+
+                      <table id="moreproducts" style="display: none;">
+                        <tr>
+                          <td style="width: 100%;"> <input type="checkbox" id="product4" name="product4">
+                            <label for="product4"> Furniture</label></td>
+                          <td style="text-align: right;">466</td>
+                        </tr>
+                        <tr>
+                            <td> <input type="checkbox" id="product5" name="product5" >
+                                <label for="product5"> Pillow</label></td>
+                            <td>214</td>
+                          </tr>
+                          <tr>
+                            <td> <input type="checkbox" id="product6" name="product6">
+                                <label for="product6"> earing</label></td>
+                            <td>132</td>
+                          </tr>
+                          </table>
+                      <button onclick="seeMoreProduct()" id="productList" class="seeMore">see more</button>
+                     
+            </div>
+            <div class="price">
+                <h3>price</h3>
+                <table >
+                    <tr>
+                      <td style="width: 100%;"> <input type="checkbox" id="price1" name="price1">
+                        <label for="price1"> Furniture</label></td>
+                      <td style="text-align: right;">466</td>
+                    </tr>
+                    <tr>
+                        <td> <input type="checkbox" id="price2" name="price2" >
+                            <label for="price2"> Pillow</label></td>
+                        <td>214</td>
+                      </tr>
+                      <tr>
+                        <td> <input type="checkbox" id="price3" name="price3">
+                            <label for="price3"> earing</label></td>
+                        <td>132</td>
+                      </tr>
+                      </table>
+                      
+                       <!-- see more -->
+                       <span id="pricedots" style="color: #f2edf3;">...</span>
+
+                       <table id="moreprice" style="display: none;">
+                        <tr>
+                            <td style="width: 100%;"> <input type="checkbox" id="price4" name="price4">
+                              <label for="price4"> Furniture</label></td>
+                            <td style="text-align: right;">466</td>
+                          </tr>
+                          <tr>
+                              <td> <input type="checkbox" id="price5" name="price5" >
+                                  <label for="price5"> Pillow</label></td>
+                              <td>214</td>
+                            </tr>
+                            <tr>
+                              <td> <input type="checkbox" id="price6" name="price6">
+                                  <label for="price6"> earing</label></td>
+                              <td>132</td>
+                            </tr>
+                           </table>
+                       <button onclick="seeMorePrice()" id="priceList" class="seeMore">see more</button>
+            </div>
+            <div class="vendor">
+                <h3>vendor</h3>
+                <table >
+                    <tr>
+                      <td style="width: 100%;"> <input type="checkbox" id="vendor1" name="vendor1">
+                        <label for="vendor1"> Furniture</label></td>
+                      <td style="text-align: right;">466</td>
+                    </tr>
+                    <tr>
+                        <td> <input type="checkbox" id="vendor2" name="vendor2" >
+                            <label for="vendor2"> Pillow</label></td>
+                        <td>214</td>
+                      </tr>
+                      <tr>
+                        <td> <input type="checkbox" id="vendor3" name="vendor3">
+                            <label for="vendor3"> earing</label></td>
+                        <td>132</td>
+                      </tr>
+                      </table>
+                      
+                      <!-- see more -->
+                      <span id="vendordots" style="color: #f2edf3;">...</span>
+
+                      <table id="morevendors" style="display: none;">
+                        <tr>
+                            <td style="width: 100%;"> <input type="checkbox" id="vendor4" name="vendor4">
+                              <label for="vendor4"> Furniture</label></td>
+                            <td style="text-align: right;">466</td>
+                          </tr>
+                          <tr>
+                              <td> <input type="checkbox" id="vendor5" name="vendor5" >
+                                  <label for="vendor5"> Pillow</label></td>
+                              <td>214</td>
+                            </tr>
+                            <tr>
+                              <td> <input type="checkbox" id="vendor6" name="vendor6">
+                                  <label for="vendor6"> earing</label></td>
+                              <td>132</td>
+                            </tr>
+                          </table>
+                      <button onclick="seeMoreVendor()" id="vendorList" class="seeMore">see more</button>
+            </div>
+            <div class="tags">
+                <h3>tags</h3>
+                <table >
+                    <tr>
+                      <td style="width: 100%;"> <input type="checkbox" id="tags1" name="tags1">
+                        <label for="tags1"> Furniture</label></td>
+                      <td style="text-align: right;">466</td>
+                    </tr>
+                    <tr>
+                        <td> <input type="checkbox" id="tags2" name="tags2" >
+                            <label for="tags2"> Pillow</label></td>
+                        <td>214</td>
+                      </tr>
+                      <tr>
+                        <td> <input type="checkbox" id="tags3" name="tags3">
+                            <label for="tags3"> earing</label></td>
+                        <td>132</td>
+                      </tr>
+                      </table>
+                      
+                       <!-- see more -->
+                       <span id="tagdots" style="color: #f2edf3;">...</span>
+
+                       <table id="moretags" style="display: none;">
+                        <tr>
+                            <td style="width: 100%;"> <input type="checkbox" id="tags4" name="tags4">
+                              <label for="tags4"> Furniture</label></td>
+                            <td style="text-align: right;">466</td>
+                          </tr>
+                          <tr>
+                              <td> <input type="checkbox" id="tags5" name="tags5" >
+                                  <label for="tags5"> Pillow</label></td>
+                              <td>214</td>
+                            </tr>
+                            <tr>
+                              <td> <input type="checkbox" id="tags6" name="tags6">
+                                  <label for="tags6"> earing</label></td>
+                              <td>132</td>
+                            </tr>
+                           </table>
+                       <button onclick="seeMoreTags()" id="tagsList" class="seeMore">see more</button>
+            </div>
+        </div>
+        <div class="show_products">
+            <div class="product">
+                <img src="./image/179957_navy_tie_dye_1.jpg" alt="product" class="product_img">
+                <p class="product_detail">Alloy Apparel Tall Honeycomb Ruched Leggings for Women</p>
+                <p class="product_name">Alloy Apparel
+                  Pants </p>
+          
+                <div class="color">
+                    <div id="box1"></div>
+                    <div id="box2"></div>
+                    <div id="box3"></div>
+                    <div id="box4"></div>
+                </div>
+          
+                <p>The new Tall Honeycomb Ruched Legging is here in multiple colors, as your everyday favorite legging! With Ruching detailing on the back and honeycomb texture. 88% Polyester, 12% Spandex Machine wash cold inside out, lay flat to dry. Offered in sizes Small-XX Large, 37" inseam. The model is 5’ 11” with a 27" waist and 38" hips and is wearing a size Small. | Alloy Apparel Tall Honeycomb Ruched Leggings for Women in Navy Tie Dye Size 2XL | Polyester</p>
+          
+                <p>$39.00 <br>Score: 12.421846</p>
+                
+            </div>
+    
+            <div class="product">
+                <img src="./image/179957_navy_tie_dye_1.jpg" alt="product" class="product_img">
+                <p class="product_detail">Alloy Apparel Tall Honeycomb Ruched Leggings for Women</p>
+                <p class="product_name">Alloy Apparel
+                  Pants </p>
+          
+                <div class="color">
+                    <div id="box1"></div>
+                    <div id="box2"></div>
+                    <div id="box3"></div>
+                    <div id="box4"></div>
+                </div>
+          
+                <p>The new Tall Honeycomb Ruched Legging is here in multiple colors, as your everyday favorite legging! With Ruching detailing on the back and honeycomb texture. 88% Polyester, 12% Spandex Machine wash cold inside out, lay flat to dry. Offered in sizes Small-XX Large, 37" inseam. The model is 5’ 11” with a 27" waist and 38" hips and is wearing a size Small. | Alloy Apparel Tall Honeycomb Ruched Leggings for Women in Navy Tie Dye Size 2XL | Polyester</p>
+          
+                <p>$39.00 <br>Score: 12.421846</p>
+                
+            </div>
+    
+            <div class="product">
+                <img src="./image/179957_navy_tie_dye_1.jpg" alt="product" class="product_img">
+                <p class="product_detail">Alloy Apparel Tall Honeycomb Ruched Leggings for Women</p>
+                <p class="product_name">Alloy Apparel
+                  Pants </p>
+          
+                <div class="color">
+                    <div id="box1"></div>
+                    <div id="box2"></div>
+                    <div id="box3"></div>
+                    <div id="box4"></div>
+                </div>
+          
+                <p>The new Tall Honeycomb Ruched Legging is here in multiple colors, as your everyday favorite legging! With Ruching detailing on the back and honeycomb texture. 88% Polyester, 12% Spandex Machine wash cold inside out, lay flat to dry. Offered in sizes Small-XX Large, 37" inseam. The model is 5’ 11” with a 27" waist and 38" hips and is wearing a size Small. | Alloy Apparel Tall Honeycomb Ruched Leggings for Women in Navy Tie Dye Size 2XL | Polyester</p>
+          
+                <p>$39.00 <br>Score: 12.421846</p>
+                
+            </div>
+    
+            <div class="product">
+                <img src="./image/179957_navy_tie_dye_1.jpg" alt="product" class="product_img">
+                <p class="product_detail">Alloy Apparel Tall Honeycomb Ruched Leggings for Women</p>
+                <p class="product_name">Alloy Apparel
+                  Pants </p>
+          
+                <div class="color">
+                    <div id="box1"></div>
+                    <div id="box2"></div>
+                    <div id="box3"></div>
+                    <div id="box4"></div>
+                </div>
+          
+                <p>The new Tall Honeycomb Ruched Legging is here in multiple colors, as your everyday favorite legging! With Ruching detailing on the back and honeycomb texture. 88% Polyester, 12% Spandex Machine wash cold inside out, lay flat to dry. Offered in sizes Small-XX Large, 37" inseam. The model is 5’ 11” with a 27" waist and 38" hips and is wearing a size Small. | Alloy Apparel Tall Honeycomb Ruched Leggings for Women in Navy Tie Dye Size 2XL | Polyester</p>
+          
+                <p>$39.00 <br>Score: 12.421846</p>
+                
+            </div>
+    
+            <div class="product">
+                <img src="./image/179957_navy_tie_dye_1.jpg" alt="product" class="product_img">
+                <p class="product_detail">Alloy Apparel Tall Honeycomb Ruched Leggings for Women</p>
+                <p class="product_name">Alloy Apparel
+                  Pants </p>
+          
+                <div class="color">
+                    <div id="box1"></div>
+                    <div id="box2"></div>
+                    <div id="box3"></div>
+                    <div id="box4"></div>
+                </div>
+          
+                <p>The new Tall Honeycomb Ruched Legging is here in multiple colors, as your everyday favorite legging! With Ruching detailing on the back and honeycomb texture. 88% Polyester, 12% Spandex Machine wash cold inside out, lay flat to dry. Offered in sizes Small-XX Large, 37" inseam. The model is 5’ 11” with a 27" waist and 38" hips and is wearing a size Small. | Alloy Apparel Tall Honeycomb Ruched Leggings for Women in Navy Tie Dye Size 2XL | Polyester</p>
+          
+                <p>$39.00 <br>Score: 12.421846</p>
+                
+            </div>
+    
+            <div class="product">
+                <img src="./image/179957_navy_tie_dye_1.jpg" alt="product" class="product_img">
+                <p class="product_detail">Alloy Apparel Tall Honeycomb Ruched Leggings for Women</p>
+                <p class="product_name">Alloy Apparel
+                  Pants </p>
+          
+                <div class="color">
+                    <div id="box1"></div>
+                    <div id="box2"></div>
+                    <div id="box3"></div>
+                    <div id="box4"></div>
+                </div>
+          
+                <p>The new Tall Honeycomb Ruched Legging is here in multiple colors, as your everyday favorite legging! With Ruching detailing on the back and honeycomb texture. 88% Polyester, 12% Spandex Machine wash cold inside out, lay flat to dry. Offered in sizes Small-XX Large, 37" inseam. The model is 5’ 11” with a 27" waist and 38" hips and is wearing a size Small. | Alloy Apparel Tall Honeycomb Ruched Leggings for Women in Navy Tie Dye Size 2XL | Polyester</p>
+          
+                <p>$39.00 <br>Score: 12.421846</p>
+                
+            </div>
+    
+            <div class="product">
+                <img src="./image/179957_navy_tie_dye_1.jpg" alt="product" class="product_img">
+                <p class="product_detail">Alloy Apparel Tall Honeycomb Ruched Leggings for Women</p>
+                <p class="product_name">Alloy Apparel
+                  Pants </p>
+          
+                <div class="color">
+                    <div id="box1"></div>
+                    <div id="box2"></div>
+                    <div id="box3"></div>
+                    <div id="box4"></div>
+                </div>
+          
+                <p>The new Tall Honeycomb Ruched Legging is here in multiple colors, as your everyday favorite legging! With Ruching detailing on the back and honeycomb texture. 88% Polyester, 12% Spandex Machine wash cold inside out, lay flat to dry. Offered in sizes Small-XX Large, 37" inseam. The model is 5’ 11” with a 27" waist and 38" hips and is wearing a size Small. | Alloy Apparel Tall Honeycomb Ruched Leggings for Women in Navy Tie Dye Size 2XL | Polyester</p>
+          
+                <p>$39.00 <br>Score: 12.421846</p>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+    /* main page */
+    .search_page{
+        
+        /* height: 100%; */
+        background-color:#f2edf3;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+  
+  /* filter section */
+   .filters{
+       width: 10vw;
+       height: auto;
+       background-color: #f2edf3;
+      
+       padding: 15px;
+   }
+
+   /* show more button */
+   .seeMore{
+       border: #f2edf3;
+       color: blue;
+   }
+
+   /* product section */
+   .show_products{
+       width: 80%;
+       height: auto;
+       background-color: #f2edf3;
+       
+
+   }
+
+</style>
+
+<style>
+    .show_products{
+        background-color: #f2edf3;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+    .box{
+        width: 20%;
+        height: 100px;
+        background-color: aliceblue;
+        margin: 20px;
+        
+    }
+</style>
+
+<style>
+    .product{
+        width: 150px;
+        align-items: center;
+       border-radius: 5px;
+       padding: 15px;
+       font-family: 'Ubuntu', sans-serif;
+       background-color: white;
+      margin: 25px;
+      
+        
+    }
+    .product_img{
+        width: 100%;
+    }
+    
+    .product_detail{
+        color:rgb(0, 0, 0) ;
+        font-weight: bold;
+    }
+    .product_name{
+        color:rgb(104, 101, 101) ;
+        font-weight: bold;
+    }
+    .color{
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+       /* margin-left: 30px; */
+       
+    
+    }
+    #box1{
+        width: 25px;
+        height: 25px;
+        background-color: rgb(161, 191, 231);
+        margin: 5px;
+        border-radius: 5px;
+    }
+    #box2{
+        width: 25px;
+        height: 25px;
+        background-color: rgb(58, 38, 146);
+        margin: 5px;
+        border-radius: 5px;
+    }
+    #box3{
+        width: 25px;
+        height: 25px;
+        background-color: rgb(81, 30, 201);
+        margin: 5px;
+        border-radius: 5px;
+    }
+    #box4{
+        width: 25px;
+        height: 25px;
+        background-color: rgb(38, 25, 214);
+        margin: 5px;
+        border-radius: 5px;
+    }
+    </style>
+
+   <script>
+
+       function seeMoreProduct(){
+           var dots = document.getElementById("productdots")
+           var moreItems = document.getElementById("moreproducts")
+           var seebtn=document.getElementById("productList");
+
+           if(dots.style.display==="none")
+           {
+               dots.style.display="inline"
+               seebtn.innerText="see more"
+               moreItems.style.display="none"
+               dots.style.color="#f2edf3";
+           }
+           else{
+            dots.style.display="none"
+               seebtn.innerText="see less"
+               moreItems.style.display="inline"
+           
+           }
+       }
+
+       function seeMorePrice(){
+           var dots = document.getElementById("pricedots")
+           var moreItems = document.getElementById("moreprice")
+           var seebtn=document.getElementById("priceList");
+
+           if(dots.style.display==="none")
+           {
+               dots.style.display="inline"
+               seebtn.innerText="see more"
+               moreItems.style.display="none"
+               dots.style.color="#f2edf3";
+           }
+           else{
+            dots.style.display="none"
+               seebtn.innerText="see less"
+               moreItems.style.display="inline"
+           
+           }
+       }
+
+       function seeMoreVendor(){
+           var dots = document.getElementById("vendordots")
+           var moreItems = document.getElementById("morevendors")
+           var seebtn=document.getElementById("vendorList");
+
+           if(dots.style.display==="none")
+           {
+               dots.style.display="inline"
+               seebtn.innerText="see more"
+               moreItems.style.display="none"
+               dots.style.color="#f2edf3";
+           }
+           else{
+            dots.style.display="none"
+               seebtn.innerText="see less"
+               moreItems.style.display="inline"
+           
+           }
+       }
+
+       function seeMoreTags(){
+           var dots = document.getElementById("tagdots")
+           var moreItems = document.getElementById("moretags")
+           var seebtn=document.getElementById("tagsList");
+
+           if(dots.style.display==="none")
+           {
+               dots.style.display="inline"
+               seebtn.innerText="see more"
+               moreItems.style.display="none"
+               dots.style.color="#f2edf3";
+           }
+           else{
+            dots.style.display="none"
+               seebtn.innerText="see less"
+               moreItems.style.display="inline"
+           
+           }
+       }
+   </script>
